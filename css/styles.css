@@ -101,7 +101,8 @@ header a {
 	height: 112px;
 	border: 2px solid #8E8F99;
 	border-radius: 4px;
-	margin-bottom: 8px;;
+	margin-bottom: 8px;
+	;
 }
 
 .social-link {
@@ -118,13 +119,28 @@ header a {
 	background-color: #404bbf;
 }
 
+.activ {
+	position: relative;
+}
+
+.activ::after {
+	background-color: #404bbf;
+	display: flex;
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	bottom: -1px;
+	position: absolute;
+}
+
 .cls-foot .container {
 	display: flex;
 	gap: 120px;
 }
 
 .cls-header {
-	border-bottom: 1px solid #e7e9fc;
+	border-bottom: 1px solid #000;
 }
 
 .li-ss {
@@ -196,11 +212,10 @@ header a {
 
 .cls-s {
 	display: flex;
-	background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(../images/office.jpg);
+	background-image: linear-gradient(to bottom,
+			rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)),
+		url(../images/office.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -226,7 +241,7 @@ h2 {
 .card {
 	width: calc((100% - 72px) / 4);
 	background-color: #ffffff;
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -330,8 +345,13 @@ footer .cls-logo {
 	gap: 24px;
 }
 
-.cls-ssss .card-p {
+.card-p {
 	width: calc((100% - 48px) / 3);
+}
+
+.card-p:hover,
+.card-p:focus {
+	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .name-app {
