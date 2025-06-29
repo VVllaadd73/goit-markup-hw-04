@@ -107,6 +107,11 @@ header a {
 	background-color: #404bbf;
 }
 
+.bg-color:hover,
+.bg-color:focus {
+	background-color: #31d0aa;
+}
+
 .activ {
 	position: relative;
 }
@@ -124,7 +129,7 @@ header a {
 
 .cls-foot .container {
 	display: flex;
-	gap: 120px;
+	align-items: baseline;
 }
 
 .cls-header {
@@ -200,8 +205,9 @@ header a {
 }
 
 .footer-social-text {
-	color: #F4F4FD;
+	color: #ffffff;
 	margin-bottom: 16px;
+	font-weight: 500;
 }
 
 .cls-s {
@@ -351,6 +357,10 @@ footer .cls-logo {
 	padding: 32px 16px;
 	border: 1px solid #e7e9fc;
 	border-top: none;
+}
+
+.colunm-a {
+	margin-right: 120px;
 }
 
 .card-p-div-img {
