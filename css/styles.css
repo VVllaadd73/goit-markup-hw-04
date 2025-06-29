@@ -367,3 +367,7 @@ footer .cls-logo {
 	position: relative;
 	overflow: hidden;
 }
+
+.bg-color {
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
