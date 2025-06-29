@@ -112,7 +112,8 @@ header a {
 	align-items: center;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
 	background-color: #404bbf;
 }
 
@@ -200,6 +201,8 @@ header a {
 	color: #434455;
 	text-decoration: none;
 	font-weight: 400;
+	transition:
+	color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cls-foot .cls-p {
@@ -229,11 +232,6 @@ header a {
 
 .cls-sss {
 	background-color: #F4F4FD;
-}
-
-.cls-sss ul {
-	display: flex;
-	justify-content: space-evenly;
 }
 
 h2 {
@@ -361,9 +359,4 @@ footer .cls-logo {
 	padding: 32px 16px;
 	border: 1px solid #e7e9fc;
 	border-top: none;
-}
-
-.animator {
-	transition:
-	color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
